@@ -1,0 +1,21 @@
+<div class="p-grid">
+ 
+    <div class="p-col-6 p-offset-3" *ngIf="!registerMode">
+        <div class="box">
+            <h1>Find your match</h1>
+            <p>Come on in to view your matches ... all you need to do is sign up!</p>
+            <div class="box-buttons-group">
+                <button pButton pRipple type="button" label="Register" class="p-mx-2" (click)="goToRegister()" *ngIf="(authService.currentUser$ | async)===null"></button>
+                <button pButton pRipple type="button" label="Learn more" class="p-button-secondary p-mx-2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-4 p-offset-4" *ngIf="registerMode">
+        <div class="box">
+             
+            <app-register (cancel)="cancelRegisterMode($event)"></app-register>
+           
+        </div>
+    </div>
+     
+</div>

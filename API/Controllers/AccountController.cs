@@ -37,7 +37,7 @@ namespace API.Controllers
             await _context.SaveChangesAsync();
             
             return new UserDTO{
-                UserName = user.UserName,
+                UserName = user.UserName.ToLower(),
                 Token = _tokenService.CreateToken(user)
             };
         }

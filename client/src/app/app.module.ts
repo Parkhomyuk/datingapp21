@@ -9,11 +9,18 @@ import {HttpClientModule} from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 
+ 
+
 import { AppComponent } from './app.component';
+
+import {NavBarModule} from 'src/app/nav-bar/nav-bar.module';
+import {HomeModule} from 'src/app/home/home.module';
+ 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,9 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ButtonModule,
-    RippleModule
+    RippleModule,
+    NavBarModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

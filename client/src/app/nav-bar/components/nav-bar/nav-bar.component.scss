@@ -1,0 +1,66 @@
+:host::ng-deep .p-menubar {
+    height: 70px;
+    p-megamenu, p-component, p-megamenu-horizontal{
+        border: 0px solid grey
+    }    
+    p-menubarsub {
+      position: absolute;
+      left: 10vw;
+    }
+    .logo{
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .navbar-end{
+        width: 30vw;
+       
+        .auth{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div{
+                 
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 760px){
+        .logo{
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        p-menubarsub {
+            position: absolute;
+            left: 15vw;
+          }
+        .logo{
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        p-menubarsub {
+            position: absolute;
+            left: 15vw;
+            .p-submenu-list{
+                margin-left: -15vw;
+            }
+          }
+        .logo{
+            position: absolute;
+            left: 5vw;
+            top: 15px; 
+            width: 10vw;
+            img{
+                width: 5vw;
+                height: auto;    
+            }
+        }
+    }
+  
+  }

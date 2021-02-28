@@ -1,0 +1,21 @@
+ 
+   :host ::ng-deep {  
+    .p-card-body {
+            background-color: rgba(193,224,172,255) !important;
+        }
+    .p-button-raised{
+        background-color: white !important;
+    } 
+    .p-button-raised:hover{
+        background-color: lightgrey !important;
+    }    
+}
+    .card-wrapper-context{
+        width:20vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         
+    }
